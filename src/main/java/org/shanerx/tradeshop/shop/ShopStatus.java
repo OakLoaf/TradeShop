@@ -26,6 +26,7 @@
 package org.shanerx.tradeshop.shop;
 
 import org.bukkit.ChatColor;
+import org.lushplugins.chatcolorhandler.ChatColorHandler;
 import org.shanerx.tradeshop.data.config.Setting;
 
 public enum ShopStatus {
@@ -47,7 +48,7 @@ public enum ShopStatus {
     }
 
     public static String colorize(String x) {
-        return ChatColor.translateAlternateColorCodes(COLOUR_CHAR, x);
+        return ChatColorHandler.translate(x);
     }
 
     @Override

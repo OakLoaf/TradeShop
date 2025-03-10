@@ -29,9 +29,9 @@ import com.google.common.base.CaseFormat;
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
 import org.apache.commons.lang.Validate;
-import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.lushplugins.chatcolorhandler.ChatColorHandler;
 import org.shanerx.tradeshop.TradeShop;
 import org.shanerx.tradeshop.shop.ShopSettingKeys;
 import org.shanerx.tradeshop.shop.ShopType;
@@ -79,7 +79,7 @@ public class ConfigManager {
     }
 
     public String colour(String toColour) {
-        return ChatColor.translateAlternateColorCodes('&', toColour);
+        return ChatColorHandler.translate(toColour);
     }
 
     public boolean load() {
