@@ -321,7 +321,7 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.20.1-R0.1-20230627.215235-38</version>
+            <version>1.20.1-R0.1-20230921.165944-178</version>
         </dependency>
 
         <dependency>
@@ -334,7 +334,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.26</version>
+            <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
 
