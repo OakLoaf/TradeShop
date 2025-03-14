@@ -25,10 +25,10 @@
 
 package org.shanerx.tradeshop.utils.versionmanagement;
 
-import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitScheduler;
+import org.lushplugins.chatcolorhandler.ChatColorHandler;
 import org.shanerx.tradeshop.player.Permissions;
 import org.shanerx.tradeshop.utils.debug.Debug;
 import org.shanerx.tradeshop.utils.debug.DebugLevels;
@@ -124,7 +124,7 @@ public class Expirer {
     }
 
     public String colorize(String msg) {
-        return ChatColor.translateAlternateColorCodes('&', msg);
+        return ChatColorHandler.translate(msg);
     }
 
     public String formatSeconds(long seconds) {

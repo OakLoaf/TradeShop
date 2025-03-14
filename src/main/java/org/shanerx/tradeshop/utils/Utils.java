@@ -40,6 +40,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.material.MaterialData;
 import org.bukkit.plugin.PluginDescriptionFile;
+import org.lushplugins.chatcolorhandler.ChatColorHandler;
 import org.shanerx.tradeshop.TradeShop;
 import org.shanerx.tradeshop.data.config.Message;
 import org.shanerx.tradeshop.data.config.Setting;
@@ -276,7 +277,7 @@ public class Utils {
      * @return the colorized string returned by the above method.
      */
     public String colorize(String msg) {
-        return ChatColor.translateAlternateColorCodes('&', msg);
+        return ChatColorHandler.translate(msg);
     }
 
     /**
